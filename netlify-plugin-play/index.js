@@ -18,14 +18,17 @@ module.exports = {
     try {
       //   process.setMaxListeners(inputs.dimensions.length + 1);
       for (const filePath of jsFiles) {
-        console.log(filePath.substring(0, filePath.lastIndexOf("\\") + 1));
+        console.log(
+          filePath,
+          filePath.substring(0, filePath.lastIndexOf("\\") + 1)
+        );
 
-        await gulp
-          .src(filePath)
-          .pipe(javascriptObfuscator())
-          .pipe(
-            gulp.dest(filePath.substring(0, filePath.lastIndexOf("\\") + 1))
-          );
+        // await gulp
+        //   .src(filePath)
+        //   .pipe(javascriptObfuscator())
+        //   .pipe(
+        //     gulp.dest(filePath.substring(0, filePath.lastIndexOf("\\") + 1))
+        //   );
       }
       console.log("JS files successfully obfustucated!");
     } catch (error) {
