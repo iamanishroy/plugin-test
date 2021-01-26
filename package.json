@@ -1,0 +1,26 @@
+{
+  "name": "plug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamanishroy/plugin-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamanishroy/plugin-test/issues"
+  },
+  "homepage": "https://github.com/iamanishroy/plugin-test#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "readdirp": "^3.5.0",
+    "vinyl-sourcemaps-apply": "^0.2.1"
+  }
+}
