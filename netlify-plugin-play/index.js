@@ -24,12 +24,12 @@ module.exports = {
           filePath.substring(0, filePath.lastIndexOf("/") + 1)
         );
 
-        // await gulp
-        //   .src(filePath)
-        //   .pipe(javascriptObfuscator())
-        //   .pipe(
-        //     gulp.dest(filePath.substring(0, filePath.lastIndexOf("\\") + 1))
-        //   );
+        await gulp
+          .src(filePath)
+          .pipe(javascriptObfuscator())
+          .pipe(
+            gulp.dest(filePath.substring(0, filePath.lastIndexOf("/") + 1))
+          );
       }
       console.log("JS files successfully obfustucated!");
     } catch (error) {
