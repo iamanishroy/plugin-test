@@ -19,6 +19,7 @@ module.exports = {
       //   process.setMaxListeners(inputs.dimensions.length + 1);
       for (const filePath of jsFiles) {
         console.log(
+          1,
           filePath,
           filePath.substring(0, filePath.lastIndexOf("\\") + 1)
         );
