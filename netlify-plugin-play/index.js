@@ -21,7 +21,7 @@ module.exports = {
         console.log(
           1,
           filePath,
-          filePath.substring(0, filePath.lastIndexOf("\\") + 1)
+          filePath.substring(0, filePath.lastIndexOf("/") + 1)
         );
 
         // await gulp
